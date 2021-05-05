@@ -1,0 +1,610 @@
+body {
+    position: relative;
+    background-color: #fafafa;
+    min-height: 100vh;
+    margin: 0 auto;
+    /* border: 1px solid #eb392c; */
+}
+
+/* Nav Bar */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    margin: 0vh;
+    background: #1F1F1F;
+    width: 100%;
+    top: 0;
+     /* width: calc(100% - 10px); */
+    /* border: 1px solid #eb392c; */
+}
+.topnav h1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color :#fafafa;
+    font-family: 'WebFont', Voyage, sans-serif;
+    font-size: 1.5rem;
+    font-weight: light;
+    letter-spacing: .07rem;
+    padding-left: 5vh;
+    max-width: 106vh;
+    max-height: .1vh;
+}
+ 
+.right {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+ 
+.right a {
+    color: #fafafa;
+    font-family: 'WebFont', Staff Light, sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: .1vh;
+    text-decoration: none;
+    padding-right: 5vh;
+}
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+a:active {
+    text-decoration: underline;
+}
+
+/* About Me  */
+#myHeader{
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    top: -5vh;
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 13vh;
+    font-weight: lighter;
+    color: #1F1F1F; 
+    height: 7vh;
+    /* border: 1px solid #2cebdb; */
+}
+.heroImg {
+    display: flex;
+    height: 35vh;
+    margin: 0 auto;
+    position: relative; 
+    top: -6vh;
+    justify-content: left;
+    max-width: 105vh;
+    /* border: 1px solid #eb392c; */
+}
+.article p {
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 1.35;
+    color: #1F1F1F; 
+    max-width: 87vh;
+    margin: 0 auto;   
+    padding: 0 5vh 0 5vh;
+    /* border: 1px solid #2f2ceb; */
+}
+.images-profile img {
+    padding: 0vh 0vh 0vh 0vh;  
+    justify-content: center;
+    /* border: 1px solid #2f2ceb; */
+}
+
+
+/* My Work */
+.myWork {
+    height: 8vh;
+    background-color: #E3DACD;
+    padding-bottom: 0px;
+    position: relative; 
+    width: 100%;
+    margin-top: 4vh;
+    /* border: 1px solid #2cafeb; */
+}
+.myWork h1 {
+    display: flex;
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 5vh;
+    font-weight: 600;
+    letter-spacing: .2vh;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1F1F1F; 
+}
+.workGrid{
+    display: flex;
+    position: relative; 
+    flex-direction: row;
+    height: 30vh;
+    margin: 0 auto;
+    max-width: 112vh;
+    height: 47vh;
+    margin-top: 1vh;
+    /* border: 1px solid #2cafeb; */
+}
+img[alt="travel"] {
+    display: flex;
+    position: relative; 
+    justify-content: left;
+    width: 77vh;
+    height: 52vh;
+    /* border: 1px solid #eb2c2c; */
+} 
+.traveltext h2{
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 5vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    color: #1F1F1F; 
+    margin: 0 auto;    
+    max-width: 106vh;  
+    padding-top: 2vh;  
+    /* border: 1px solid red;  */
+}
+.traveltext h3{
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 1.7vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 1.35;
+    color: #1F1F1F; 
+    margin: 0 auto;
+    max-width: 106vh;
+    padding: .6vh 0vh 3vh 0vh;  
+    /* border: 1px solid #eb2c2c; */
+}
+.traveltext button{
+    background-color: #1F1F1F;
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #E3DACD; 
+    padding: 10px 24px;
+    text-align: center;
+    display: inline-block;
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.traveltext button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+img[alt="nsa"] {
+    display: flex;
+    position: relative; 
+    justify-content: left;
+    width: 77vh;
+    height: 52vh;
+    /* border: 1px solid #eb2c2c; */
+} 
+.nsatext h2{
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 5vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 4.6vh;
+    color: #1F1F1F; 
+    margin: 0 auto;    
+    max-width: 106vh;  
+    padding-top: 2vh;  
+    /* border: 1px solid red;  */
+}
+.nsatext h3{
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 1.7vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 1.35;
+    color: #1F1F1F; 
+    margin: 0 auto;
+    max-width: 106vh;
+    padding: 1.5vh 0vh 3vh 0vh;  
+    /* border: 1px solid #eb2c2c; */
+}
+.nsatext button{
+    background-color: #1F1F1F;
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #E3DACD;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    /* float: left;  */
+    /* border: 1px solid #eb2c2c; */
+}
+.nsatext button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+img[alt="sportteam"] {
+    display: flex;
+    position: relative; 
+    justify-content: left;
+    width: 77vh;
+    height: 52vh;
+    /* border: 1px solid #eb2c2c; */
+} 
+.sporttext h2{
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 5vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 4.6vh;
+    color: #1F1F1F; 
+    margin: 0 auto;    
+    max-width: 106vh;  
+    padding-top: 2vh;  
+    /* border: 1px solid red;  */
+}
+.sporttext h3{
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 1.7vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 1.35;
+    color: #1F1F1F; 
+    margin: 0 auto;
+    max-width: 106vh;
+    padding: 1.5vh 0vh 3vh 0vh;  
+    /* border: 1px solid #eb2c2c; */
+}
+.sporttext button{
+    background-color: #1F1F1F;
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #E3DACD;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    /* float: left;  */
+    /* border: 1px solid #eb2c2c; */
+}
+.sporttext button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+img[alt="shelter"] {
+    display: flex;
+    position: relative; 
+    justify-content: left;
+    width: 77vh;
+    height: 52vh;
+    /* border: 1px solid #eb2c2c; */
+} 
+.sheltertext h2{
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 5vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 4.6vh;
+    color: #1F1F1F; 
+    margin: 0 auto;    
+    max-width: 106vh;  
+    padding-top: 2vh;  
+    /* border: 1px solid red;  */
+}
+.sheltertext h3{
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 1.7vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 1.35;
+    color: #1F1F1F; 
+    margin: 0 auto;
+    max-width: 106vh;
+    padding: 1.5vh 0vh 3vh 0vh;  
+    /* border: 1px solid #eb2c2c; */
+}
+.sheltertext button{
+    background-color: #1F1F1F;
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #E3DACD;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    /* float: left;  */
+    /* border: 1px solid #eb2c2c; */
+}
+.sheltertext button:hover {
+    /* background-color: #008CBA;
+    color: white; */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* <!--  My UX Skills section coded using CSS flex --> */
+.skillhd {
+    height: 8vh;
+    background-color :#E3DACD;
+    padding-bottom: 0px;
+    position: relative; 
+    width: 100%;
+    margin-top: 6vh;
+}
+.skillhd h1{
+    display: flex;
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 5vh;
+    font-weight: 600;
+    letter-spacing: .2vh;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1F1F1F; 
+}
+.flex-container {
+    display: flex;
+    max-width: 110vh;
+    margin: 0 auto;    
+    margin-top: 2vh;
+    /* border: 1px solid #eb2c2c; */
+}
+img[alt~="diamond"] {
+    display: flex;
+    float: left; 
+    height: 4.5vh;
+    padding: 1vh 0vh 0vh 0vh;  
+}
+img[alt~="tool"] {
+    display: flex;
+    float: left; 
+    height: 4vh;
+    padding: 1vh 1vh 0vh 0vh; 
+}
+.mySkills h2 {
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 5vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    color: #1F1F1F; 
+    /* letter-spacing: 1px; */
+    margin: 0 auto;    
+    width: 53vh;  
+    /* border: 1px solid #552ceb;  */
+}
+.mySkills p {
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    line-height: 3vh;
+    color: #1F1F1F; 
+    margin: 0 auto; 
+    text-align: left;
+    padding: 2vh 0vh 0vh 0vh;  
+}
+.flex-child > div {
+    display: flex; 
+    /* border: 1px solid #552ceb;  */
+}
+
+
+/* Connect */
+.connect {
+    position: relative;
+    height: 7vh;
+    background-color :#E3DACD;
+    top: 2vh;
+    width: 100%;
+    /* border: 1px solid #eb2c2c; */
+}
+
+.connect h1{
+    display: flex;
+    font-family: 'WebFont', Voyage, serif;
+    font-size: 5vh;
+    font-weight: 600;
+    letter-spacing: .2vh;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #1F1F1F; 
+}
+.email a{
+    display: flex;
+    font-family: 'WebFont', Staff, sans-serif;
+    font-size: 2.5vh;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    color: #1F1F1F; 
+    margin: 0 auto;
+    max-width: 106vh;
+    padding-top: 10vh;
+    height: 10vh;
+    justify-content: center;
+}
+
+/* Footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    color: #fafafa;
+    text-align: center;
+    justify-content: space-between;
+    background: #1F1F1F; 
+    /* border: 1px solid #c8eb2c; */
+}
+.copyright {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5vh;
+    font-family: 'WebFont', Staff Light, sans-serif;
+    font-size: 1.8vh;
+    font-weight: 400;
+    letter-spacing: .3vh;
+    color: #fafafa;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+.footer a {
+    color: #fafafa;
+    font-family: 'WebFont', Staff Light, sans-serif;
+    font-size: 1.8vh;
+    font-weight: 400;
+    letter-spacing: .15vh;
+    text-decoration: none;   
+    padding-right: 5vh;
+}
+a:link {
+    text-decoration: none;
+} 
+a:visited {
+    text-decoration: none;
+} 
+a:hover {
+    text-decoration: underline;
+}  
+a:active {
+    text-decoration: underline;
+}
+
+/* TopNav */
+.topnav .right a {
+    overflow: hidden;
+    background: #1F1F1F; 
+}
+.topnav .right a {
+  float: left;
+  display: block;
+  color: #fafafa;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav .right a:hover {
+  background-color: #fafafa;
+  color: #1F1F1F; 
+}
+.topnav .name a:hover {
+   background-color: #fafafa;
+   color: #1F1F1F; 
+   /* border: 1px solid #eb2c2c; */
+}
+
+/* MediaQuery */
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topnav {   
+        flex-direction: column;
+    }
+    #myHeader {
+        font-size: 5rem;
+        margin-top: 8rem;
+    }
+    .heroImg {        
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        /* border: 1px solid #eb2c2c; */
+    }
+    .images-profile img {
+        flex-direction: column;
+        width: 60%;
+        height: auto;
+        /* border: 1px solid #eb2c2c; */
+    }
+    .article p {   
+        flex-direction: column;
+        font-size: 3vw;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        padding: 0vh 1.5vh 0vh 0vh; 
+    }
+    .workGrid {
+        flex-direction: column;
+    }
+    .myWork h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Modal */
+/* .modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
+  
