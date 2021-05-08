@@ -1,3 +1,10 @@
+:target:before {
+    content:"";
+    display:block;
+    height:.1vh; /* fixed header height*/
+    margin:-90px 0 0; /* negative fixed header height */
+}
+
 body {
     position: relative;
     background-color: #fafafa;
@@ -69,12 +76,12 @@ a:active {
     display: flex;
     justify-content: center;
     position: relative; 
-    top: -5vh;
+    /* top: 2vh; */
     font-family: 'WebFont', Voyage, serif;
     font-size: 13vh;
     font-weight: lighter;
     color: #1F1F1F; 
-    height: 7vh;
+    height: 9vh;
     /* border: 1px solid #2cebdb; */
 }
 .heroImg {
@@ -82,7 +89,7 @@ a:active {
     height: 35vh;
     margin: 0 auto;
     position: relative; 
-    top: -6vh;
+    top: -3vh;
     justify-content: left;
     max-width: 105vh;
     /* border: 1px solid #eb392c; */
@@ -102,7 +109,6 @@ a:active {
 .images-profile img {
     padding: 0vh 0vh 0vh 0vh;  
     justify-content: center;
-    /* border: 1px solid #2f2ceb; */
 }
 
 
@@ -113,7 +119,7 @@ a:active {
     padding-bottom: 0px;
     position: relative; 
     width: 100%;
-    margin-top: 4vh;
+    top: 5vh;
     /* border: 1px solid #2cafeb; */
 }
 .myWork h1 {
@@ -137,7 +143,7 @@ a:active {
     margin: 0 auto;
     max-width: 112vh;
     height: 47vh;
-    margin-top: 1vh;
+    top: 5vh;
     /* border: 1px solid #2cafeb; */
 }
 img[alt="travel"] {
@@ -360,7 +366,8 @@ img[alt="shelter"] {
     padding-bottom: 0px;
     position: relative; 
     width: 100%;
-    margin-top: 6vh;
+    /* margin-top: 6vh; */
+    top: 22vh;
 }
 .skillhd h1{
     display: flex;
@@ -377,9 +384,10 @@ img[alt="shelter"] {
 }
 .flex-container {
     display: flex;
-    max-width: 110vh;
+    width: 80vw;
+    height: 25vw;
     margin: 0 auto;    
-    margin-top: 2vh;
+    margin-top: 25vh;
     /* border: 1px solid #eb2c2c; */
 }
 img[alt~="diamond"] {
@@ -402,8 +410,8 @@ img[alt~="tool"] {
     color: #1F1F1F; 
     /* letter-spacing: 1px; */
     margin: 0 auto;    
-    width: 53vh;  
-    /* border: 1px solid #552ceb;  */
+    width: 30vw;  
+    /* border: 1px solid #2cebeb;  */
 }
 .mySkills p {
     font-family: 'WebFont', Staff, sans-serif;
@@ -412,15 +420,21 @@ img[alt~="tool"] {
     letter-spacing: .1vh;
     line-height: 3vh;
     color: #1F1F1F; 
-    margin: 0 auto; 
+    /* margin: 0 auto;  */
     text-align: left;
-    padding: 2vh 0vh 0vh 0vh;  
+    padding-right: 4vw;
+    /* background-color: #a16c6c; */
 }
 .flex-child > div {
     display: flex; 
     /* border: 1px solid #552ceb;  */
 }
-
+.ui-design, .tech-skills {
+    flex: 1;
+}
+#html {
+    padding-left: 4vw;
+}
 
 /* Connect */
 .connect {
@@ -574,7 +588,7 @@ a:active {
 }
 
 /* Modal */
-/* .modal {
+.modal {
     display: none;
     position: fixed; 
     z-index: 1; 
@@ -606,5 +620,5 @@ a:active {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-} */
+}
   

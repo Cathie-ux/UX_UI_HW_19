@@ -4,6 +4,7 @@
 <head>
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/index.js"></script>
 <title>Cathie Yun</title>
 </head>
 
@@ -18,7 +19,7 @@
        <div class="right">
          <a href="#Work">Work</a>
          <a href="#Skills">Skills</a>
-         <a href="#LetsConnect">Contact</a>
+         <a class="ContactModal">Contact</a>
        </div>
      </div>
 </section>
@@ -51,7 +52,20 @@
     </div>
   </section> 
   
+<section>
     <section>
+      <div class="workGrid">
+          <div class="images-sportteam"> 
+            <img src="images/sport.png" alt="sportteam">
+          </div>
+          <div class="sporttext">
+            <h2>sporTTeam</h2>
+            <h3>MOBILE DESIGN, SOCIAL APP</h3>
+            <button onclick="document.location='https://cathie-ux.github.io/UX_UI_HW_20/'">View Work</button>
+          </div>
+      </div>
+    </section>
+
     <div class="workGrid">
       <div class="images-trav"> 
         <img src="images/travel.png" alt="travel">
@@ -78,19 +92,6 @@
       </section>
   
     <section>
-      <div class="workGrid">
-        <div class="images-sportteam"> 
-          <img src="images/sport.png" alt="sportteam">
-        </div>
-        <div class="sporttext">
-          <h2>sporTTeam</h2>
-          <h3>MOBILE DESIGN, SOCIAL APP</h3>
-          <button>View Work</button> 
-        </div>
-      </div>
-      </section>
-  
-    <section>
         <div class="workGrid">
           <div class="images-shelter"> 
             <img src="images/giveshelter.png" alt="shelter">
@@ -106,36 +107,39 @@
 
 <!-- /* My Skills */ -->
 <section id="Skills">
-    <div class="skillhd">
+  <div class="skillhd">
     <h1>Skills</h1>
-    </div>
+  </div>
     
-<div class="mySkills">
+  <div class="mySkills">
     <div class="flex-container">
-      <div>
-      <img src="images/double diamond process.jpg" alt="diamond">
-      <h2>UX/UI Design</h2>
-      <div class="flex-child">
-        <div> 
-        <p>• User-Centric Design Research <br> • User-Testing <br> • Design Thinking<br> • Sketching<br> • Wire-framing<br> • User Interface Development<br> • Information Architecture</p>
-        <p>• Rapid Prototyping<br> • Visual Design<br> • Responsive Web Design<br> • Branding + Identity<br> • Product Design<br> • Product Strategy</p>  
+      <div class="ui-design">
+        <img src="images/double diamond process.jpg" alt="diamond">
+        <h2>UX/UI Design</h2>
+        <div class="flex-child">
+          <div> 
+            <p>• User-Centric Design Research <br> • User-Testing <br> • Design Thinking<br> • Sketching<br> • Wire-framing<br> • User Interface Development<br> • Information Architecture</p>
+            <p>• Rapid Prototyping<br> • Visual Design<br> • Responsive Web Design<br> • Branding + Identity<br> • Product Design<br> • Product Strategy</p>  
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-skills">
+        <img src="images/tools.jpg" alt="tool">
+        <h2>Technical Skills</h2>
+        <div class="flex-child">
+          <div>
+            <p>• Figma <br> • Adobe XD<br> • Sketch<br> • InVision<br> • Adobe CC<br> • Miro<br> • InDesign<br> • Photoshop<br> • Illustrator</p>
+            <p id="html">• HTML<br> • CSS<br> • JavaScript<br> • jQuery<br> • Bootstrap<br> • GitHub<br> • VS Code</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
-      <div>
-        <img src="images/tools.jpg" alt="tool">
-        <h2>Technical Skills</h2>
-      <div class="flex-child">
-       <div>
-         <p>• Figma <br> • Adobe XD<br> • Sketch<br> • InVision<br> • Adobe CC<br> • Miro<br> • InDesign<br> • Photoshop<br> • Illustrator</p>
-         <p>• HTML<br> • CSS<br> • JavaScript<br> • jQuery<br> • Bootstrap<br> • GitHub<br> • VS Code</p>
-      </div>
-    </div>
-  </section>
+</section>
 
 <!-- /* Connect */ -->
-<section id="LetsConnect">
+<!-- <section id="LetsConnect">
     <div class="connect">
     <h1>Let’s Connect</h1>
     </div>
@@ -144,7 +148,7 @@
     <div class="email">
         <a href="#">cathieyun.ux@gmail.com</a>
     </div>
-</section>
+</section> -->
 
 <!-- Footer -->
 <section class="footer">
@@ -161,18 +165,19 @@
   </section>
 </body>
 
-<script src="js/index.js"></script>
+
 
 
 <!-- Modal -->
-<!-- <button id="myBtn">Contact</button>
+<!-- <button id="myBtn">Contact</button> -->
 
 <div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <h3>Let's Connect</h3>
-    <p>cathieyun.ux@gmail.com</p>
+    <a href="#">cathieyun.ux@gmail.com</a>
+    <!-- <p>cathieyun.ux@gmail.com</p> -->
   </div>
-</div> -->
+</div>
 
 </html>
